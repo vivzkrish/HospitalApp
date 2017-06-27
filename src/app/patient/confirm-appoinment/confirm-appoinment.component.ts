@@ -61,7 +61,7 @@ export class ConfirmAppoinmentComponent implements OnInit {
 
             (image)=>
             {
-            console.log('Image parsed');
+            console.log('Image parsed Successfully');
             }
           )
 
