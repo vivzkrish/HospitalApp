@@ -1,0 +1,16 @@
+
+<h3>Property Details</h3>
+<p>Property Id:{{data.id}}</p>
+<p>Property Address:{{PropertyAddress1}}</p>
+<p>Property City:{{PropertyAddress2}}</p>
+<p>Property Cost:{{PropertyCost |currency}}</p>
+<p>Property Size:{{PropertySize}}</p>
+<p>Property Sale Date:{{PropertyDate | date}}</p>
+<p>Property Image:
+  <br>
+  <img class="thumbnail-image" (error)="setDefaultPic()" [src]="PropertyImage" />
+</p>
+
+
+<button (click)="onClickButton()">Go back to List </button>
+<!--<a routerLink="/patient/appoinment">Go Back to list of Doctors</a>-->
