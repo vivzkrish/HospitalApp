@@ -61,7 +61,7 @@ export class ConfirmAppoinmentComponent implements OnInit {
 
             (image)=>
             {
-            console.log(image.arrayBuffer());
+            
             }
           )
 
