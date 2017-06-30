@@ -14,8 +14,7 @@ export class AppoinmentComponent implements OnInit {
 
   constructor( private app:AppoinmentService,private route:Router) { }
 
-  ngOnInit() {
-     }
+  ngOnInit() {}
 
   OnSubmitData(data)
   {
@@ -29,6 +28,7 @@ export class AppoinmentComponent implements OnInit {
       (data)=>
       {
         this.listOfData=data;
+        console.log(  this.listOfData);
       }
     );
   }
