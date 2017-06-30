@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {AppoinmentService} from "./appoinment.service";
+
 import {Router} from "@angular/router";
+import {AppoinmentService} from "../appoinment.service";
 
 @Component({
   selector: 'app-appoinment',

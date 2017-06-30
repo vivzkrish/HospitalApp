@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Params, Router} from "@angular/router";
-import {AppoinmentService} from "../appoinment/appoinment.service";
+import {AppoinmentService} from "../appoinment.service";
 import {GetImageService} from "./get-image.service";
 
 @Component({

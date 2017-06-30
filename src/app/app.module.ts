@@ -17,9 +17,12 @@ import {SignupService} from "./patient/signup/signup.service";
 import {AuthGuardService} from "./auth-guard.service";
 import {SignInService} from "./patient/sign-in/sign-in.service";
 import {CanDeactivateService} from "./patient/signup/can-deactivate-guard.service";
-import {AppoinmentService} from "./patient/appoinment/appoinment.service";
+
 import { ConfirmAppoinmentComponent } from './patient/confirm-appoinment/confirm-appoinment.component';
 import {GetImageService} from "./patient/confirm-appoinment/get-image.service";
+import { ResolveComponent } from './patient/resolve/resolve.component';
+import {ResolverService} from "./patient/resolve/resolver.service";
+import {AppoinmentService} from "./patient/appoinment.service";
 
 
 @NgModule({
@@ -35,6 +38,7 @@ import {GetImageService} from "./patient/confirm-appoinment/get-image.service";
     AppoinmentComponent,
     PatientHomeComponent,
     ConfirmAppoinmentComponent,
+    ResolveComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +47,7 @@ import {GetImageService} from "./patient/confirm-appoinment/get-image.service";
     AppRoutingModule,
    ],
   providers: [SignupService,SignInService,AuthGuardService,CanDeactivateService,
-    AppoinmentService,GetImageService],
+    AppoinmentService,GetImageService, ResolverService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
