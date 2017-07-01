@@ -28,7 +28,6 @@ import {NgxPaginationModule} from "ngx-pagination";
 import {ModalModule} from "angular2-modal";
 import {BootstrapModalModule} from "angular2-modal/plugins/bootstrap";
 
-
 @NgModule({
   declarations: [
     AppComponent,
