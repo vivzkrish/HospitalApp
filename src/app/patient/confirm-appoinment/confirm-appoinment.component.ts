@@ -76,6 +76,6 @@ export class ConfirmAppoinmentComponent implements OnInit {
   }
   onClickButton()
   {
-      this.router.navigateByUrl('/patient/appoinment');
+      this.router.navigate(['/patient/appoinment']);
   }
 }

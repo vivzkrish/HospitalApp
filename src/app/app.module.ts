@@ -23,6 +23,7 @@ import {GetImageService} from "./patient/confirm-appoinment/get-image.service";
 import { ResolveComponent } from './patient/resolve/resolve.component';
 import {ResolverService} from "./patient/resolve/resolver.service";
 import {AppoinmentService} from "./patient/appoinment.service";
+import { PropertyDetailComponent } from './patient/property-detail/property-detail.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import {AppoinmentService} from "./patient/appoinment.service";
     PatientHomeComponent,
     ConfirmAppoinmentComponent,
     ResolveComponent,
+    PropertyDetailComponent,
   ],
   imports: [
     BrowserModule,

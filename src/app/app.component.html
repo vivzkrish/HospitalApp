@@ -2,11 +2,16 @@
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
       <ul class="nav nav-tabs">
-        <li role="presentation" class="active"><a routerLink="/">Home</a></li>
-        <!--RouterLink is a directive that is used to bind a route with clickable HTML element.-->
-        <li role="presentation"><a routerLink="/patient">Patients</a></li>
-        <li role="presentation"><a routerLink="/doctors">Doctor</a></li>
-        <li role="presentation"><a routerLink="/admin">Admin</a></li>
+        <li role="presentation"
+            routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact:true}">
+          <a routerLink="/">Home</a></li>
+        <li role="presentation">
+          <a routerLink="/patient">Patients</a></li>
+        <li role="presentation">
+          <a routerLink="/doctors">Doctor</a></li>
+        <li role="presentation">
+          <a routerLink="/admin">Admin</a></li>
       </ul>
     </div>
   </div>

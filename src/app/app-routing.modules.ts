@@ -14,6 +14,7 @@ import {CanDeactivateService} from "./patient/signup/can-deactivate-guard.servic
 import {ConfirmAppoinmentComponent} from "./patient/confirm-appoinment/confirm-appoinment.component";
 import {ResolveComponent} from "./patient/resolve/resolve.component";
 import {ResolverService} from "./patient/resolve/resolver.service";
+import {PropertyDetailComponent} from "./patient/property-detail/property-detail.component";
 
 const appRoutes:Routes=[
   {path:'',component:HomeComponent},
@@ -26,6 +27,7 @@ const appRoutes:Routes=[
     /*{path:'appoinment',canActivate:[AuthGuardService],component:AppoinmentComponent},*/
     {path:'appoinment',component:AppoinmentComponent},
       {path:'appoinment/:data.PropertyId',component:ConfirmAppoinmentComponent},
+      {path:'property-detail',component:PropertyDetailComponent},
       {path:'resolve',component:ResolveComponent,resolve:{propertyList:ResolverService}}
     ]
   },
