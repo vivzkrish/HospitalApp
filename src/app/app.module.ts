@@ -24,6 +24,7 @@ import { ResolveComponent } from './patient/resolve/resolve.component';
 import {ResolverService} from "./patient/resolve/resolver.service";
 import {AppoinmentService} from "./patient/appoinment.service";
 import { PropertyDetailComponent } from './patient/property-detail/property-detail.component';
+import {NgxPaginationModule} from "ngx-pagination";
 
 
 @NgModule({
@@ -47,6 +48,7 @@ import { PropertyDetailComponent } from './patient/property-detail/property-deta
     FormsModule,
     HttpModule,
     AppRoutingModule,
+    NgxPaginationModule
    ],
   providers: [SignupService,SignInService,AuthGuardService,CanDeactivateService,
     AppoinmentService,GetImageService, ResolverService],
