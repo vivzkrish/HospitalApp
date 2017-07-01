@@ -25,6 +25,8 @@ import {ResolverService} from "./patient/resolve/resolver.service";
 import {AppoinmentService} from "./patient/appoinment.service";
 import { PropertyDetailComponent } from './patient/property-detail/property-detail.component';
 import {NgxPaginationModule} from "ngx-pagination";
+import {ModalModule} from "angular2-modal";
+import {BootstrapModalModule} from "angular2-modal/plugins/bootstrap";
 
 
 @NgModule({
@@ -48,7 +50,9 @@ import {NgxPaginationModule} from "ngx-pagination";
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    ModalModule.forRoot(),
+    BootstrapModalModule
    ],
   providers: [SignupService,SignInService,AuthGuardService,CanDeactivateService,
     AppoinmentService,GetImageService, ResolverService],
