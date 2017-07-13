@@ -74,8 +74,8 @@ export class ConfirmAppoinmentComponent implements OnInit {
   {
     this.PropertyImage = "assets/home.jpg";
   }
-  onClickButton()
+ /* onClickButton()
   {
       this.router.navigate(['/patient/appoinment']);
-  }
+  }*/
 }
