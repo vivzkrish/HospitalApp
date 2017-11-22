@@ -40,10 +40,11 @@ export class SignupComponent implements OnInit,CanComponentDeactivate {
     this.add2=add2;
     this.utype=utype;
 
-    this.signup.registerUser(uname,pwd,email,mob,dob,add1,add2,utype).subscribe((data)=>
+    this.signup.registerUser(uname,pwd,email,mob,dob,add1,add2,utype).subscribe(
+      (data)=>
     {
       this.result=data;
-      console.log(this.result);
+      console.log("Api post result "+this.result);
     });
       this.changesSaved=true;
 

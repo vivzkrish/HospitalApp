@@ -12,22 +12,25 @@ export class SignInComponent implements OnInit {
   mobile:number;
   password:number;
   constructor(private loginservice:SignInService,private route:Router) { }
+  isLogin=false;
   ngOnInit() {
   }
   loginSubmit(mobile:number,password:number)
   {
+
     this.mobile=mobile;
     this.password=password;
     this.loginservice.login(mobile,password).subscribe((data)=>
     {
       this.result=data;
         if(this.result.result==='login_ok') {
+          this.isLogin=true;
          /* this.route.navigate(["./patient/patient-home"]);*/
-          this.route.navigate(["./patient/appoinment"]);
+         this.route.navigate(["./patient/appoinment"]);
         }
-        else {
+        /*else {
           this.error='Username/Password Wrong';
-        }
+        }*/
     });
   }
 }

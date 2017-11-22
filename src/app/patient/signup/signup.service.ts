@@ -20,6 +20,7 @@ export class SignupService {
     params.set('address1',add1);
     params.set('address2',add2);
     params.set('usertype',utype);
+    console.log(params);
     let body=params;
 
 
@@ -27,7 +28,10 @@ export class SignupService {
     return this.http.post(`http://rjtmobile.com/aamir/realestate/realestate_app/estate_reg_corsEnabled.php`,body)
       .map(
         (res:Response) =>
-          res.text()
+        {
+          console.log(res);
+          return res.text();
+        }
       )
       .catch(
         (error:Response)=>
